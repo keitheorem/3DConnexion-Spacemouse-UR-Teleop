@@ -133,7 +133,7 @@ def main():
                 #get TCP velocity of robot
                 actual_velocity = rtde_r.getActualTCPSpeed()
                 actual_velocity = [0 if abs(x) < 0.01 else x for x in actual_velocity] #filter out extremely small numbers
-                print(actual_velocity)
+                print("Current velocity vector" , actual_velocity)
 
                 #get TCP pose of robot
                 #actual_pose = rtde_r.getActualTCPPose()
